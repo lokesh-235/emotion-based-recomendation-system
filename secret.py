@@ -23,3 +23,8 @@ refresh_token = ""
 client_id = ""
 client_secret = ""
 youtube_key = ""
+# 880191699540-7ld6surjfgemeattprlml3dk9ect5qku.apps.googleusercontent.com
+
+# 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
+
+# AIzaSyAM80WPBGgIfPclinqX8zwPD-awGRw545Q

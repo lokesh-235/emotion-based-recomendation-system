@@ -334,3 +334,77 @@ footer {
 
 
 
+/* ===================== */
+/* VIDEO RECOMMENDATIONS */
+/* ===================== */
+
+.resultpage {
+    background: #2F303A;
+    min-height: 100vh;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.resultpage h2 {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color: white;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+/* Grid layout */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* Video card */
+.video-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+}
+
+/* Thumbnail */
+.video-card img {
+    width: 100%;
+    display: block;
+}
+
+/* Watch button */
+.video-card .watch-text {
+    padding: 14px;
+    background: linear-gradient(135deg, #6a52d3, violet);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.video-card a {
+    text-decoration: none;
+}
+
+/* Emotion accent (optional) */
+.video-card[data-emotion="Happy"] .watch-text { background: linear-gradient(135deg, #fbc531, #ffdd59); }
+.video-card[data-emotion="Sad"] .watch-text { background: linear-gradient(135deg, #0097e6, #00a8ff); }
+.video-card[data-emotion="Angry"] .watch-text { background: linear-gradient(135deg, #e84118, #c23616); }
+.video-card[data-emotion="Neutral"] .watch-text { background: linear-gradient(135deg, #7f8fa6, #718093); }
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+    .resultpage h2 {
+        font-size: 28px;
+    }
+}
